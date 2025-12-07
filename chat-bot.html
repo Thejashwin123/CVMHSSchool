@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CHAT-BOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/CVM.png" type="image/png">
+  <link rel="stylesheet" href="chat-bot.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+        <img src="images/CVM.png" alt="Chinmaya Vidyalaya Logo" class="logo-img" style="height: 40px; width: auto;">
+        <span>Chinmaya</span> Vidyalaya
+    </a>
+    <!-- here back represents the history go back once -->
+    <div class="content">
+        <a  class="btn" onclick="history.go(-1)">BACK</a>
+    </div>
+    
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="index.html#home">home</a></li>
+            <li><a href="index.html#Pillar">Pillars</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#Events">Events</a></li>
+            <li><a href="index.html#Stages">Stages</a></li>
+            <li><a href="chat-bot.html">Chatbot</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+      <section class="Chat-Bot">
+
+  <!-- CHAT BOT STARTS HERE -->
+  <div class="chat-container">
+    <div class="chat-header">My Chatbot</div>
+
+    <div id="chat-box" class="chat-box">
+      <div class="msg bot-msg">Hi, I am your chatbot. no if you want to see commands enter 0</div>
+    </div>
+        
+    <form id="chat-form" class="chat-input-area">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message..."
+        autocomplete="off"
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+
+
+</section> 
+<!-- CHAT BOT ENDS HERE -->
+
+
+  
+  <script src="script.js"></script>
+
+
+
+
+  
+</body>
+</html>

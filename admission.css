@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Admission column / card */
+.admission-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+}
+
+.admission-card h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: #111827;
+  letter-spacing: 0.03em;
+}
+
+/* Each row */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Inputs and textarea */
+.form-row input,
+.form-row textarea {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #FFBB00;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.18);
+}
+
+/* Submit button */
+.admission-btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #FFBB00, #FFBB00);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.admission-btn:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.45);
+}
+
+.admission-btn:active {
+  transform: scale(0.97);
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .admission-card {
+    margin: 10px;
+    padding: 16px 14px;
+  }
+
+  .admission-card h2 {
+    font-size: 20px;
+  }
+}
